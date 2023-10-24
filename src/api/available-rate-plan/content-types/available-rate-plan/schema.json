@@ -4,7 +4,8 @@
   "info": {
     "singularName": "available-rate-plan",
     "pluralName": "available-rate-plans",
-    "displayName": "Available Rate Plan"
+    "displayName": "Available Rate Plan",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -176,7 +177,7 @@
       "type": "customField",
       "options": {
         "output": "HTML",
-        "preset": "standard"
+        "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
     },

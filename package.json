@@ -1,13 +1,14 @@
 {
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
     "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-i18n": "4.13.6",
+    "@strapi/plugin-users-permissions": "4.13.6",
+    "@strapi/strapi": "4.13.6",
+    "better-sqlite3": "8.5.0",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
-    "mime-types": "^2.1.27",
-    "@strapi/strapi": "4.13.6",
-    "@strapi/plugin-users-permissions": "4.13.6",
-    "@strapi/plugin-i18n": "4.13.6",
-    "better-sqlite3": "8.5.0"
+    "mime-types": "^2.1.27"
   },
   "name": "my-app-name",
   "private": true,

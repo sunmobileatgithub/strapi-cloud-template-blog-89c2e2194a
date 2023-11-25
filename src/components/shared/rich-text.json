@@ -7,13 +7,8 @@
   },
   "options": {},
   "attributes": {
-    "HTML": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "rich"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+    "body": {
+      "type": "richtext"
     }
   }
 }

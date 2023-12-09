@@ -1082,7 +1082,15 @@ export interface ApiFooterFooter extends Schema.SingleType {
     };
   };
   attributes: {
-    list: Attribute.DynamicZone<
+    main: Attribute.DynamicZone<
+      ['elements.item-array', 'elements.items', 'elements.footer-section']
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sub: Attribute.DynamicZone<
       ['elements.item-array', 'elements.items', 'elements.footer-section']
     > &
       Attribute.SetPluginOptions<{

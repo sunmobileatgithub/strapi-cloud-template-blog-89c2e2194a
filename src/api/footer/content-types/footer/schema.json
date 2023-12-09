@@ -16,7 +16,20 @@
     }
   },
   "attributes": {
-    "list": {
+    "main": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "elements.item-array",
+        "elements.items",
+        "elements.footer-section"
+      ]
+    },
+    "sub": {
       "pluginOptions": {
         "i18n": {
           "localized": true

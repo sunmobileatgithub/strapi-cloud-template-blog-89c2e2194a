@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_items",
+  "info": {
+    "displayName": "items",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.item-array"
+    }
+  }
+}

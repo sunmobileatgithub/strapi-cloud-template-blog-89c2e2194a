@@ -1504,6 +1504,24 @@ export interface ApiRoamingDayPassRoamingDayPass extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    banner_desktop: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        versions: {
+          versioned: true;
+        };
+        i18n: {
+          localized: true;
+        };
+      }>;
+    banner_mobile: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        versions: {
+          versioned: true;
+        };
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

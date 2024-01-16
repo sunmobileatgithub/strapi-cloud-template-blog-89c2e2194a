@@ -121,14 +121,15 @@
       "customField": "plugin::ckeditor.CKEditor"
     },
     "banner_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "versions": {
           "versioned": true
@@ -139,14 +140,15 @@
       }
     },
     "banner_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "versions": {
           "versioned": true
@@ -155,6 +157,28 @@
           "localized": true
         }
       }
+    },
+    "border_color": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        },
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "alert_text": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        },
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

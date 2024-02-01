@@ -1291,6 +1291,7 @@ export interface ApiNewRegistrationTAndCNewRegistrationTAndC
     singularName: 'new-registration-t-and-c';
     pluralName: 'new-registration-t-and-cs';
     displayName: 'New Registration T and C';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1371,6 +1372,25 @@ export interface ApiNewRegistrationTAndCNewRegistrationTAndC
         };
       }>;
     TAndC04: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'rich';
+        }
+      > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    SubHeader05: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    TAndC05: Attribute.RichText &
       Attribute.CustomField<
         'plugin::ckeditor.CKEditor',
         {

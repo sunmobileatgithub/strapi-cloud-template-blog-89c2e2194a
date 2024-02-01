@@ -4,7 +4,8 @@
   "info": {
     "singularName": "new-registration-t-and-c",
     "pluralName": "new-registration-t-and-cs",
-    "displayName": "New Registration T and C"
+    "displayName": "New Registration T and C",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -95,6 +96,27 @@
       "type": "string"
     },
     "TAndC04": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "SubHeader05": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "TAndC05": {
       "pluginOptions": {
         "i18n": {
           "localized": true

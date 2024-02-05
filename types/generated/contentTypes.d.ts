@@ -1683,6 +1683,15 @@ export interface ApiRoamingDayPassRoamingDayPass extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    planordering: Attribute.Integer &
+      Attribute.SetPluginOptions<{
+        versions: {
+          versioned: true;
+        };
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

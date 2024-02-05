@@ -1542,6 +1542,41 @@ export interface ApiProductFeatureProductFeature extends Schema.CollectionType {
   };
 }
 
+export interface ApiRoamingCountryThumbnailRoamingCountryThumbnail
+  extends Schema.CollectionType {
+  collectionName: 'roaming_country_thumbnails';
+  info: {
+    singularName: 'roaming-country-thumbnail';
+    pluralName: 'roaming-country-thumbnails';
+    displayName: 'Roaming Country thumbnail';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    thumbnail: Attribute.Media;
+    flag_name: Attribute.String & Attribute.Required;
+    code: Attribute.String;
+    flag_en_name: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::roaming-country-thumbnail.roaming-country-thumbnail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::roaming-country-thumbnail.roaming-country-thumbnail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiRoamingDayPassRoamingDayPass extends Schema.CollectionType {
   collectionName: 'roaming_day_passes';
   info: {
@@ -1692,6 +1727,24 @@ export interface ApiRoamingDayPassRoamingDayPass extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    country_name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        versions: {
+          versioned: true;
+        };
+        i18n: {
+          localized: true;
+        };
+      }>;
+    thumbnail: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        versions: {
+          versioned: true;
+        };
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1753,6 +1806,7 @@ declare module '@strapi/types' {
       'api::new-registration-t-and-c.new-registration-t-and-c': ApiNewRegistrationTAndCNewRegistrationTAndC;
       'api::page.page': ApiPagePage;
       'api::product-feature.product-feature': ApiProductFeatureProductFeature;
+      'api::roaming-country-thumbnail.roaming-country-thumbnail': ApiRoamingCountryThumbnailRoamingCountryThumbnail;
       'api::roaming-day-pass.roaming-day-pass': ApiRoamingDayPassRoamingDayPass;
     }
   }

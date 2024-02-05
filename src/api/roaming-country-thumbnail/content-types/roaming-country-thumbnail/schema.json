@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roaming_country_thumbnails",
+  "info": {
+    "singularName": "roaming-country-thumbnail",
+    "pluralName": "roaming-country-thumbnails",
+    "displayName": "Roaming Country thumbnail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {}
+    },
+    "flag_name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "flag_en_name": {
+      "pluginOptions": {},
+      "type": "string"
+    }
+  }
+}

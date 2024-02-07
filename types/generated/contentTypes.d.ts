@@ -1559,6 +1559,7 @@ export interface ApiRoamingCountryThumbnailRoamingCountryThumbnail
     flag_name: Attribute.String & Attribute.Required;
     code: Attribute.String;
     flag_en_name: Attribute.String;
+    ordering: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -36,6 +36,9 @@
     "flag_en_name": {
       "pluginOptions": {},
       "type": "string"
+    },
+    "ordering": {
+      "type": "integer"
     }
   }
 }

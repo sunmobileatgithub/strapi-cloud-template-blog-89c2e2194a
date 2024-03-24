@@ -14,6 +14,7 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^5.2.0",
     "strapi-plugin-import-export-entries": "^1.21.1",
+    "strapi-provider-upload-aws-s3": "^3.6.11",
     "styled-components": "^5.2.1"
   },
   "name": "my-app-name",
@@ -26,7 +27,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "author": {
     "name": "A Strapi developer"
   },
